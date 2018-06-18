@@ -1,0 +1,21 @@
+{
+  "name": "hyperapp-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "open": "xdg-open http://localhost:1234 || open http://localhost:1234 || start '' http://localhost:1234",
+    "dev": "npm start & npm run open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hyperapp": "^1.2.6"
+  },
+  "devDependencies": {
+    "parcel": "^1.8.1",
+    "typescript": "^2.9.1"
+  }
+}
