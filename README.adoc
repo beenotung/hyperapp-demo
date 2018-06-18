@@ -1,0 +1,5 @@
+= hyperapp-hello-world
+
+This repo shows how to setup hyperapp.
+
+Almost as easy as elm.
