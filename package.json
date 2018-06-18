@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "open": "xdg-open http://localhost:1234 || open http://localhost:1234 || start '' http://localhost:1234",
-    "dev": "npm start & npm run open"
+    "dev": "parcel index.html --open"
   },
   "keywords": [],
   "author": "",

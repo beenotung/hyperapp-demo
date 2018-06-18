@@ -3,3 +3,5 @@
 This repo shows how to setup hyperapp.
 
 Almost as easy as elm.
+
+It does web server and live-reload automatically.
