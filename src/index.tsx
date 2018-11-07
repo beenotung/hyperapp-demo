@@ -1,18 +1,24 @@
-import { app, h } from "hyperapp"
+import { ActionsType, app, h } from "hyperapp"
 
 (window as any).h = h
 
-const state = {
+interface State {
+  count: number,
+}
+
+const state: State = {
   count: 0
 }
 
-const actions = {
-  down: value => state => ({ count: state.count - value }),
-  up: value => state => ({ count: state.count + value })
+class Actions implements ActionsType<State, Actions> {
+  down = value => state => ({ count: state.count - value })
+  up = value => state => ({ count: state.count + value })
 }
 
-const view = (state, actions) => (
-  <div>
+const actions = new Actions()
+
+const view = (state: State, actions: Actions) => (
+  <div center>
     <h1>{state.count}</h1>
     <button onclick={() => actions.down(1)}>-</button>
     <button onclick={() => actions.up(1)}>+</button>
