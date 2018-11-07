@@ -11,6 +11,10 @@
   },
   "scripts": {
     "clean": "rm -rf dist .cache",
+    "prebuild": "npm run clean",
+    "build": "parcel build --public-url '.' --no-source-maps --experimental-scope-hoisting --detailed-report src/index.html",
+    "prebuild:fallback": "npm run prebuild",
+    "build:fallback": "parcel build --public-url '.' --no-source-maps --detailed-report src/index.html",
     "start": "parcel src/index.html"
   },
   "repository": {
