@@ -1,0 +1,7 @@
+= hyperapp-demo
+
+This repo shows to how use https://github.com/hyperapp/hyperapp[hyperapp] with Typescript.
+
+Hyperapp is a minimal library to build SPA (single page application) in Elm style but in Javascript (or Typescript).
+
+This setup is using https://github.com/parcel-bundler/parcel[parcel] to build and serve the project.
